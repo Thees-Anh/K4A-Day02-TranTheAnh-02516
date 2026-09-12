@@ -1,6 +1,24 @@
-# Day 02 Lab — Tìm Đúng Bài Toán Cho AI
+# Day 02 Lab — Camera phát hiện chỗ đỗ xe trống
 
-> Từ vấn đề thật quanh mình → workflow rõ → Problem Statement đủ chặt → chọn Rule / Workflow / Agent → quyết định Go / Not Yet / No-Go.
+## Bài toán
+
+Người lái xe vào bãi thường phải chạy qua nhiều dãy để tìm ô trống vì trạng thái chỗ đỗ chỉ được quan sát trực tiếp. Dự án khảo sát một workflow dùng camera cố định và computer vision để biến hình ảnh thành trạng thái `trống / có xe / không chắc chắn`, sau đó hiển thị số chỗ còn trống cho người lái và màn hình giám sát cho nhân viên vận hành.
+
+> Đây là bài phân tích problem và thiết kế pilot, chưa phải cam kết rằng hệ thống đã được triển khai. Các baseline chưa có log thật đều được đánh dấu là **giả định cần kiểm chứng**.
+
+## Bài nộp
+
+- [01 — Individual Problem Scan](01-individual-problem-scan/individual-report.md)
+- [02 — Group Problem Statement](02-group-problem-statement/group-report.md)
+- [03 — Individual Reflection](03-individual-reflection/reflection.md)
+
+## Kết luận hiện tại
+
+**Go có điều kiện với pilot nhỏ**, ở mức **Workflow**, không phải Agent. Rule định nghĩa vùng ô đỗ và ngưỡng ổn định; mô hình thị giác phát hiện xe; workflow tổng hợp trạng thái và yêu cầu người vận hành kiểm tra các trường hợp không chắc chắn. Chỉ mở rộng nếu pilot đạt các ngưỡng metric đã nêu trong bài.
+
+---
+
+## Hướng dẫn gốc của lab
 
 ## Tài liệu trong folder này
 
